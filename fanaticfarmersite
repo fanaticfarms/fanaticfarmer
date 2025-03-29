@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanatic Farmer | Microgreens</title>
+
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background-image: url('https://www.livewholier.com/cdn/shop/articles/Microgreens-Spoons.png?v=1686325690'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #28a745; /* Fresh green color */
+            padding: 15px 30px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #218838;
+        }
+
+        /* Products Section */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Centering the products grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px;
+    justify-items: center; /* Ensures all items are centered horizontally */
+    align-items: center; /* Ensures all items are centered vertically (if height allows) */
+}
+
+/* Individual Product Item */
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Make each item take full width in its column */
+    max-width: 300px; /* Optionally add a max-width to limit item size */
+}
+
+/* Product Item Image */
+.product-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Product Item Title */
+.product-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+/* Product Item Description */
+.product-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Button */
+.product-item button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: #218838;
+}
+
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .testimonial-item {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Fresh, Nutritious Microgreens Delivered to Your Door</h1>
+            <p>Grow your health with the freshest, most flavorful microgreens from Fanatic Farmer!</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Microgreens</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="https://5.imimg.com/data5/JJ/DL/IC/SELLER-37654953/radish-microgreens-500x500.jpg"Radish Microgreens">
+                <h3>Radish Microgreens</h3>
+                <p>Fresh, spicy radish microgreens packed with flavor!</p>
+                <button>Buy Now</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2_HWKED4ks5-u9oXMmJDmdZhqMNX9PTYX8w&s"Sunflower Microgreens">
+                <h3>Sunflower Microgreens</h3>
+                <p>Delicious, nutrient-packed sunflower greens.</p>
+                <button>Buy Now</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="https://goodeggs4.imgix.net/e9415f8a-57cb-404b-b8e2-6b01a6f34ee8.jpg?w=840&h=525&fm=jpg&q=80&fit=crop"Pea Shoots">
+                <h3>Pea Shoots</h3>
+                <p>Sweet, crisp pea shoots for every meal.</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Fanatic Farmer | Fresh Microgreens</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+</body>
+</html>
