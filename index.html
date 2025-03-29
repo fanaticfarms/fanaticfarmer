@@ -336,53 +336,48 @@ body {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us Section</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            color: #004d00; /* Dark Green Text */
-            margin-top: 90px;
+        /* Contact Us Section Styling */
         #contact {
-    padding-top: 50px; /* Adds space above the contact section */
-    color: white;
-    border: 2px solid white;
-    padding: 20px; /* Keeps existing padding inside the section */
-    text-align: center;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
-}
-
-
-
-        #contact h2 {
-            font-size: 24px;
-            font-weight: bold;
+            padding: 30px; /* Space INSIDE the border */
+            margin: 50px 0; /* Space ABOVE and BELOW the border */
+            color: white; /* Ensures text is visible */
+            border: 2px solid white; /* White border */
+            text-align: center;
+            border-radius: 10px; /* Optional rounded corners */
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background: transparent; /* Ensure background stays transparent */
         }
 
-        #contact p {
-            font-size: 18px;
+        /* General body styling */
+        body {
+            background-color: #004400; /* Dark green background */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
         }
     </style>
 </head>
 <body>
 
-
+    <!-- Contact Us Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: fanaticfarms.customerservice@gmail.com</p>
-        <br>
-        <p>Phone: (209) 560-6273</p>
-        <br>
-        <p>Pioneer, Amador County, CA</p>
-        <br>
-        <p>More varieties are coming soon!</p>
-        
+        <p>Fill out the form below or email us at <a href="mailto:example@email.com" style="color: white; text-decoration: underline;">example@email.com</a></p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required style="display: block; margin: 10px auto; padding: 10px; width: 80%; max-width: 400px;">
+            <input type="email" name="email" placeholder="Your Email" required style="display: block; margin: 10px auto; padding: 10px; width: 80%; max-width: 400px;">
+            <textarea name="message" placeholder="Your Message" required style="display: block; margin: 10px auto; padding: 10px; width: 80%; max-width: 400px; height: 100px;"></textarea>
+            <button type="submit" style="background-color: white; color: black; border: none; padding: 10px 20px; margin-top: 10px; cursor: pointer; font-size: 16px;">Send Message</button>
+        </form>
     </section>
 
 </body>
 </html>
+
 
 
 
